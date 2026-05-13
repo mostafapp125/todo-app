@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskFlow Pro</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <img src="images/preview.webp.webp" alt="Preview">
+
+    <div class="top">
+
+      <div>
+        <h1>TaskFlow Pro</h1>
+        <p class="subtitle">Manage your daily tasks</p>
+      </div>
+
+      <button id="modeBtn">Dark</button>
+
+    </div>
+
+    <div class="input-box">
+
+      <input 
+      type="text" 
+      id="taskInput" 
+      placeholder="Add new task">
+
+      <button id="addBtn">Add</button>
+
+    </div>
+
+    <div class="tools">
+
+      <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search task">
+
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="active">Active</option>
+      </select>
+
+    </div>
+
+    <p id="count">Tasks: 0</p>
+
+    <div id="empty">
+      No Tasks Yet 
+    </div>
+
+    <ul id="taskList"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
