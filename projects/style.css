@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body{
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.input-box{
+  display: flex;
+  gap: 10px;
+}
+
+input{
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+button{
+  padding: 10px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #1d4ed8;
+}
+
+ul{
+  margin-top: 20px;
+  list-style: none;
+}
+
+li{
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button{
+  background: crimson;
+  padding: 6px 10px;
+}
+
+li button:hover{
+  background: darkred;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dark{
+  background: #020617;
+}
+
+.dark .container{
+  background: #1e293b;
+}
+
+.dark h1{
+  color: white;
+}
+
+.dark li{
+  background: #334155;
+  color: white;
+}
+
+.dark input{
+  background: #0f172a;
+  color: white;
+  border: 2px solid #334155;
+}
+li div{
+  display: flex;
+  gap: 5px;
+}
+
+li button:first-child{
+  background: orange;
+}
+
+li button:first-child:hover{
+  background: darkorange;
+}
+ li{
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ button{
+  transition: 0.2s;
+}
+
+button:active{
+  transform: scale(0.95);
+}
+ li{
+  transition: 0.2s;
+}
+
+li:hover{
+  transform: scale(1.02);
+}
+ .container{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}

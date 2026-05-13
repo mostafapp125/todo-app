@@ -1,0 +1,292 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card</title>
+    <link rel="stylesheet" href="d:\learn.javascript\revision\start.css">
+</head>
+<body>
+    <div class="card">
+    <h1>Mostafa Goda</h1>
+    <p>"A passionate front-end developer who enjoys building modern and responsive websites using<strong> HTML, CSS, and JavaScript</strong>."</p>
+    <img src="d:\learn.javascript\revision\10d26620-a344-4094-a173-9a48fe0d8ff8-400x400.webp">
+   <button>follow</button>
+    </div>
+</body>
+</html> -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevStudio</title>
+  <link rel="stylesheet" href="d:\learn.javascript\revision\start.css">
+</head>
+<body>
+
+  
+  <nav class="navbar">
+    <div class="logo">DevStudio</div>
+
+    <ul class="links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+
+  <section class="hero">
+    <h1>We Build Modern Websites</h1>
+    <p>We create fast, responsive and modern websites for your business.</p>
+    <button>Get Started</button>
+  </section>
+
+  
+  <section class="services">
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Beautiful and user-friendly designs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Development</h3>
+      <p>Clean and fast coding solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>SEO</h3>
+      <p>Improve your website ranking.</p>
+    </div>
+  </section>
+
+ 
+  <section class="about">
+    <div class="about-img">
+      <img src="d:\learn.javascript\revision\10d26620-a344-4094-a173-9a48fe0d8ff8-400x400.webp">
+    </div>
+
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        We are a creative team focused on building modern, responsive,
+        and high-quality websites that help businesses grow online.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 DevStudio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>  --> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  <h1>mostafa</h1>
+  </header>
+  <main>
+    <p>I am learning Front-End</p>
+    <img src="d26620-a344-4094-a173-9a48fe0d8ff8-400x400.webp" alt="faild">
+    <ul>
+      <li>html</li>
+      <li>css</li>
+      <li>js</li>
+    </ul>
+      <a href="https://elzero.org/javascript-bootcamp-assignments-lesson-from-054-to-056/">my profile</a>
+  </main>
+  <footer>2026</footer>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Waffle House</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: #d97706;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Sections */
+    .page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+      padding-top: 60px;
+    }
+
+    html {
+      scroll-snap-type: y mandatory;
+    }
+
+    #home {
+      background: #fff7ed;
+    }
+
+    #menu {
+      background: #ffedd5;
+      width: 100%;
+    }
+
+    #contact {
+      background: #fed7aa;
+    }
+
+    /* Menu Grid */
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 80%;
+      padding: 20px;
+    }
+
+    .item {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .price {
+      color: #d97706;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #d97706;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>🧇 Waffle House</h2>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#menu">المنيو</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<!-- Home -->
+<section class="page" id="home">
+  <h1>أحلى وافل في البلد 😍</h1>
+  <p>طازة – سخن – بطعم يجنن</p>
+</section>
+
+<!-- Menu -->
+<section class="page" id="menu">
+  <h2>المنيو</h2>
+
+  <div class="menu">
+    <div class="item">
+      <h3>وافل شوكولاتة</h3>
+      <p class="price">40 جنيه</p>
+      <button>اطلب الآن</button>
+    </div>
+
+    <div class="item">
+      <h3>وافل فراولة</h3>
+      <p class="price">45 جنيه</p>
+      <button>اطلب الآن</button>
+    </div>
+
+    <div class="item">
+      <h3>وافل نوتيلا</h3>
+      <p class="price">50 جنيه</p>
+      <button>اطلب الآن</button>
+    </div>
+  </div>
+</section>
+<p id="start">popo</p>
+<!-- Contact -->
+<section class="page" id="contact">
+  <h2>تواصل معنا</h2>
+  <p>📞 01017905311</p>
+  <p>📍 مصر</p>
+</section>
+
+<script>
+  // Smooth scroll من النافبار
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      let target = this.getAttribute("href");
+      document.querySelector(target).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+
+  // واتساب
+  let buttons = document.querySelectorAll("button");
+  let phoneNumber = "201017905311";
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function() {
+      let itemName = this.parentElement.querySelector("h3").textContent;
+      let price = this.parentElement.querySelector(".price").textContent;
+
+      let message = `مرحبًا، أريد طلب ${itemName} بسعر ${price}`;
+      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, "_blank");
+
+      this.textContent = "✔ تم الطلب";
+      this.style.backgroundColor = "green";
+    });
+  });
+</script>
+
+</body>
+</html>

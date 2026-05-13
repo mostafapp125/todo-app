@@ -1,0 +1,567 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="most.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="counter">100000000000</div>
+  <script src="man.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest Fire</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      height:100vh;
+      overflow:hidden;
+      background:#000;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+      font-family:Arial;
+    }
+
+    /* الخلفية */
+    .scene{
+      position:relative;
+      width:100%;
+      height:100vh;
+      background:
+      linear-gradient(to top,#07120b 20%,#0f2027 60%,#1f3b4d);
+      overflow:hidden;
+    }
+
+    /* القمر */
+    .moon{
+      position:absolute;
+      top:80px;
+      right:120px;
+      width:120px;
+      height:120px;
+      background:#fff;
+      border-radius:50%;
+      box-shadow:0 0 50px #fff;
+    }
+
+    /* الأشجار */
+    .tree{
+      position:absolute;
+      bottom:0;
+      width:40px;
+      height:300px;
+      background:#1b1207;
+    }
+
+    .tree::before,
+    .tree::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      border-left:80px solid transparent;
+      border-right:80px solid transparent;
+    }
+
+    .tree::before{
+      top:-120px;
+      border-bottom:180px solid #0b3d16;
+    }
+
+    .tree::after{
+      top:-220px;
+      border-bottom:180px solid #145523;
+    }
+
+    /* النار */
+    .fire{
+      position:absolute;
+      bottom:60px;
+      left:50%;
+      transform:translateX(-50%);
+      width:180px;
+      height:250px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+      filter:blur(1px);
+    }
+
+    .flame{
+      position:absolute;
+      bottom:0;
+      width:70px;
+      height:160px;
+      border-radius:50%;
+      background:radial-gradient(circle,
+      #ffff99 0%,
+      #ffcc00 20%,
+      #ff6600 60%,
+      #ff0000 100%);
+      animation:flicker 0.8s infinite alternate;
+      transform-origin:center bottom;
+      box-shadow:
+      0 0 20px orange,
+      0 0 40px red,
+      0 0 80px orange;
+    }
+
+    .flame:nth-child(2){
+      width:90px;
+      height:200px;
+      animation-duration:0.6s;
+      left:30px;
+    }
+
+    .flame:nth-child(3){
+      width:60px;
+      height:140px;
+      animation-duration:0.9s;
+      left:-30px;
+    }
+
+    @keyframes flicker{
+      0%{
+        transform:scaleY(1) rotate(-2deg);
+      }
+      25%{
+        transform:scaleY(1.1) rotate(2deg);
+      }
+      50%{
+        transform:scaleY(0.9) rotate(-3deg);
+      }
+      75%{
+        transform:scaleY(1.2) rotate(3deg);
+      }
+      100%{
+        transform:scaleY(1) rotate(-1deg);
+      }
+    }
+
+    /* الشرر */
+    .spark{
+      position:absolute;
+      bottom:120px;
+      width:6px;
+      height:6px;
+      background:orange;
+      border-radius:50%;
+      animation:sparks 3s linear infinite;
+    }
+
+    @keyframes sparks{
+      0%{
+        transform:translateY(0) scale(1);
+        opacity:1;
+      }
+      100%{
+        transform:translateY(-300px) translateX(100px);
+        opacity:0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="scene">
+
+  <div class="moon"></div>
+
+  <!-- الأشجار -->
+  <!-- <div class="tree" style="left:5%"></div>
+  <div class="tree" style="left:15%"></div>
+  <div class="tree" style="left:28%"></div>
+  <div class="tree" style="left:75%"></div>
+  <div class="tree" style="left:88%"></div>
+
+  <!-- النار -->
+  <!-- <div class="fire">
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+  </div>
+
+</div>
+
+<script>
+
+// إنشاء الشرر
+for(let i = 0; i < 80; i++){
+
+  let spark = document.createElement("div");
+  spark.classList.add("spark");
+
+  spark.style.left =
+  (window.innerWidth / 2 + Math.random() * 150 - 75) + "px";
+
+  spark.style.animationDelay =
+  Math.random() * 3 + "s";
+
+  spark.style.animationDuration =
+  (2 + Math.random() * 2) + "s";
+
+  document.querySelector(".scene").appendChild(spark);
+}
+
+</script>
+
+</body>
+</html>  --> -->
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Realistic Forest Fire</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  overflow:hidden;
+  background:#000;
+}
+
+/* المشهد */
+.scene{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  background:
+  radial-gradient(circle at top,#2d3b52 0%,#0b1118 50%,#020406 100%);
+}
+
+/* القمر */
+.moon{
+  position:absolute;
+  top:70px;
+  right:120px;
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:
+  0 0 30px #fff,
+  0 0 80px rgba(255,255,255,.6);
+  opacity:.9;
+}
+
+/* ضباب */
+.fog{
+  position:absolute;
+  inset:0;
+  background:
+  linear-gradient(to top,
+  rgba(255,120,0,.08),
+  transparent 40%);
+  animation:fogMove 20s linear infinite;
+}
+
+@keyframes fogMove{
+  from{
+    transform:translateX(-100px);
+  }
+  to{
+    transform:translateX(100px);
+  }
+}
+
+/* الأرض */
+.ground{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:180px;
+  background:
+  linear-gradient(to top,#111,#000);
+}
+
+/* الأشجار */
+.tree{
+  position:absolute;
+  bottom:120px;
+  width:22px;
+  height:280px;
+  background:#120b05;
+  border-radius:10px;
+}
+
+.tree::before,
+.tree::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  border-left:90px solid transparent;
+  border-right:90px solid transparent;
+}
+
+.tree::before{
+  top:-140px;
+  border-bottom:220px solid #081b0c;
+}
+
+.tree::after{
+  top:-240px;
+  border-bottom:220px solid #0f2d14;
+}
+
+/* النار */
+.fire-container{
+  position:absolute;
+  left:50%;
+  bottom:120px;
+  transform:translateX(-50%);
+  width:300px;
+  height:400px;
+  filter:blur(.5px);
+}
+
+/* اللهب */
+.flame{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform-origin:center bottom;
+  border-radius:50%;
+  mix-blend-mode:screen;
+  animation:flicker .12s infinite;
+}
+
+.flame1{
+  width:140px;
+  height:260px;
+  margin-left:-70px;
+
+  background:
+  radial-gradient(circle at 50% 80%,
+  #fff 0%,
+  #ffe066 15%,
+  #ffb703 35%,
+  #fb8500 55%,
+  #d62828 80%,
+  transparent 100%);
+
+  box-shadow:
+  0 0 40px #ff7300,
+  0 0 80px #ff5500,
+  0 0 140px red;
+}
+
+.flame2{
+  width:100px;
+  height:220px;
+  margin-left:-20px;
+
+  background:
+  radial-gradient(circle at 50% 80%,
+  #fff 0%,
+  #ffe066 20%,
+  #ff7b00 60%,
+  transparent 100%);
+
+  animation-delay:.05s;
+}
+
+.flame3{
+  width:90px;
+  height:180px;
+  margin-left:-100px;
+
+  background:
+  radial-gradient(circle at 50% 80%,
+  #fff 0%,
+  #ffcf33 20%,
+  #ff5400 65%,
+  transparent 100%);
+
+  animation-delay:.08s;
+}
+
+/* حركة النار */
+@keyframes flicker{
+
+  0%{
+    transform:
+    translateX(0px)
+    scaleY(1)
+    rotate(-2deg);
+  }
+
+  25%{
+    transform:
+    translateX(4px)
+    scaleY(1.08)
+    rotate(2deg);
+  }
+
+  50%{
+    transform:
+    translateX(-4px)
+    scaleY(.92)
+    rotate(-3deg);
+  }
+
+  75%{
+    transform:
+    translateX(3px)
+    scaleY(1.12)
+    rotate(3deg);
+  }
+
+  100%{
+    transform:
+    translateX(0px)
+    scaleY(1)
+    rotate(-1deg);
+  }
+}
+
+/* الشرر */
+.spark{
+  position:absolute;
+  bottom:0;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:orange;
+  box-shadow:0 0 10px orange;
+  animation:sparkFly linear infinite;
+}
+
+@keyframes sparkFly{
+
+  0%{
+    transform:
+    translate(0,0)
+    scale(1);
+    opacity:1;
+  }
+
+  100%{
+    transform:
+    translate(var(--x),-500px)
+    scale(0);
+    opacity:0;
+  }
+}
+
+/* دخان */
+.smoke{
+  position:absolute;
+  bottom:80px;
+  left:50%;
+  width:140px;
+  height:140px;
+  background:rgba(80,80,80,.15);
+  border-radius:50%;
+  filter:blur(30px);
+  animation:smokeUp 8s linear infinite;
+}
+
+@keyframes smokeUp{
+
+  0%{
+    transform:
+    translateX(-50%)
+    translateY(0)
+    scale(.7);
+
+    opacity:.3;
+  }
+
+  100%{
+    transform:
+    translateX(-50%)
+    translateY(-500px)
+    scale(2.2);
+
+    opacity:0;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+  <div class="moon"></div>
+  <div class="fog"></div>
+
+  <!-- الأشجار -->
+  <div class="tree" style="left:5%"></div>
+  <div class="tree" style="left:18%"></div>
+  <div class="tree" style="left:30%"></div>
+  <div class="tree" style="left:75%"></div>
+  <div class="tree" style="left:88%"></div>
+
+  <!-- النار -->
+  <div class="fire-container">
+
+    <div class="flame flame1"></div>
+    <div class="flame flame2"></div>
+    <div class="flame flame3"></div>
+
+    <div class="smoke"></div>
+
+  </div>
+
+  <div class="ground"></div>
+
+</div>
+
+<script>
+
+const scene = document.querySelector(".scene");
+
+/* إنشاء شرر متطاير */
+for(let i = 0; i < 120; i++){
+
+  const spark = document.createElement("div");
+
+  spark.classList.add("spark");
+
+  spark.style.left =
+  (window.innerWidth / 2 + Math.random() * 220 - 110) + "px";
+
+  spark.style.animationDuration =
+  (2 + Math.random() * 3) + "s";
+
+  spark.style.animationDelay =
+  Math.random() * 5 + "s";
+
+  spark.style.setProperty(
+    "--x",
+    (Math.random() * 300 - 150) + "px"
+  );
+
+  scene.appendChild(spark);
+}
+
+</script>
+
+</body>
+</html>
